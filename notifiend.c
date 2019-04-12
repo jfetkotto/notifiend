@@ -104,8 +104,7 @@ module_battery(void)
     static char bat_state;
     int bat_charge_old = bat_charge;
     char bat_state_old = bat_state;
-
-
+    
     if (tick == 0) {
         bat_charge = int_from_file(BAT_PERC_FILE);
         bat_state = char_from_file(BAT_STAT_FILE);
